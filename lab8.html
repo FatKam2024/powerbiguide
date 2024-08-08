@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8: Optimizing Report Performance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 8: Optimizing Report Performance</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Objective</h2>
+            <p>In this lab, you will learn techniques to optimize the performance of your Power BI reports.</p>
+        </section>
+        
+        <section>
+            <h2>Steps</h2>
+            <ol>
+                <li>Open your Power BI Desktop file from previous labs.</li>
+                <li>Use Performance Analyzer to identify slow-loading visuals:
+                    <ul>
+                        <li>Go to the View tab and click "Performance Analyzer".</li>
+                        <li>Click "Start Recording" and interact with your report.</li>
+                        <li>Review the results to identify performance issues.</li>
+                    </ul>
+                </li>
+                <li>Optimize DAX measures:
+                    <ul>
+                        <li>Use variables to store and reuse complex calculations.</li>
+                        <li>Replace CALCULATE + FILTER with CALCULATETABLE where possible.</li>
+                    </ul>
+                </li>
+                <li>Improve data model:
+                    <ul>
+                        <li>Remove unnecessary columns and tables.</li>
+                        <li>Use integers for relationship columns when possible.</li>
+                        <li>Avoid bi-directional relationships unless necessary.</li>
+                    </ul>
+                </li>
+                <li>Optimize visuals:
+                    <ul>
+                        <li>Limit the number of visuals per page.</li>
+                        <li>Use bookmarks and buttons for drill-through instead of multiple visuals.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <img src="images/performance_optimization.png" alt="Performance Optimization" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Exercise</h2>
+            <ol>
+                <li>Use Performance Analyzer to identify the top 3 slowest loading visuals in your report.</li>
+                <li>Optimize at least two DAX measures using variables and more efficient functions.</li>
+                <li>Review your data model and make at least three improvements for performance.</li>
+                <li>Redesign one report page to use fewer visuals with bookmarks for different views.</li>
+                <li>Implement incremental refresh for your largest table (if applicable).</li>
+                <li>Re-run Performance Analyzer and document the improvements in load times.</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced DAX in Power BI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced DAX in Power BI</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Introduction</h2>
+            <p>This tutorial covers advanced DAX topics in Power BI, including time intelligence functions, complex calculations, and iterators.</p>
+        </section>
+        
+        <section>
+            <h2>Time Intelligence Functions</h2>
+            <p>Learn how to use DAX time intelligence functions:</p>
+            <ul>
+                <li><code>DATEADD</code>: Shifts dates by a specified number of intervals.</li>
+                <li><code>PARALLELPERIOD</code>: Returns a parallel period for a given date.</li>
+                <li><code>SAMEPERIODLASTYEAR</code>: Returns the same period in the previous year.</li>
+                <li><code>YTD</code>: Year-to-date calculations.</li>
+                <li><code>MTD</code>: Month-to-date calculations.</li>
+                <li><code>QTD</code>: Quarter-to-date calculations.</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>Sales YTD = CALCULATE([Total Sales], DATESYTD(DimDate[Date]))</code></pre>
+            <img src="images/time_intelligence.png" alt="Time Intelligence Functions" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Complex Calculations</h2>
+            <p>Learn how to perform complex calculations using DAX:</p>
+            <ol>
+                <li>Use the <code>CALCULATE</code> function to modify filter context.</li>
+                <li>Combine multiple DAX functions to create advanced measures.</li>
+                <li>Use variables in DAX to simplify complex formulas.</li>
+            </ol>
+            <p>Example:</p>
+            <pre><code>Market Share = 
+VAR TotalSales = CALCULATE([Total Sales], ALL(Product))
+RETURN
+DIVIDE([Total Sales], TotalSales)</code></pre>
+        </section>
+        
+        <section>
+            <h2>Iterators and X-Functions</h2>
+            <p>Learn how to use iterators and X-functions for row-by-row calculations:</p>
+            <ul>
+                <li><code>SUMX</code>: Calculates the sum of an expression evaluated for each row.</li>
+                <li><code>AVERAGEX</code>: Calculates the average of an expression evaluated for each row.</li>
+                <li><code>MAXX</code> and <code>MINX</code>: Find the maximum or minimum value of an expression.</li>
+                <li><code>FILTER</code>: Returns a table filtered down to specific rows.</li>
+                <li><code>ADDCOLUMNS</code>: Adds calculated columns to a table expression.</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>Total Profit = SUMX(Sales, Sales[Quantity] * (Sales[Price] - RELATED(Product[Cost])))</code></pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

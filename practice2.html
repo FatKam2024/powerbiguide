@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Questions: Set 2 (Advanced)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Practice Questions: Set 2 (Advanced)</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Advanced Questions</h2>
+            <p>Test your understanding of advanced Power BI topics with these questions:</p>
+            <ol>
+                <li>How do you create a relationship between two tables in Power BI?</li>
+                <li>Explain the difference between a calculated column and a measure in DAX.</li>
+                <li>What is the purpose of the CALCULATE function in DAX?</li>
+                <li>How do you perform a year-to-date calculation using DAX?</li>
+                <li>What are the steps to publish a report to Power BI Service?</li>
+                <li>How do you implement Row-Level Security (RLS) in Power BI?</li>
+                <li>What is the purpose of the RELATED function in DAX?</li>
+                <li>How do you create a custom calendar table in Power BI?</li>
+                <li>Explain the concept of filter context in DAX.</li>
+                <li>How do you use parameters in Power BI reports?</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Answers</h2>
+            <ol>
+                <li>Go to the Model view, drag fields between tables to create a relationship, or use the Manage Relationships dialog.</li>
+                <li>A calculated column is computed row by row and stored in the table, while a measure is computed on demand and used in visualizations.</li>
+                <li>The CALCULATE function modifies the filter context of a calculation, allowing for complex aggregations and filtering.</li>
+                <li>Use the TOTALYTD function in DAX, e.g., TOTALYTD(SUM(Sales[Amount]), 'Date'[Date]).</li>
+                <li>Open the report in Power BI Desktop, click "Publish," select your workspace, and click "Select."</li>
+                <li>Create roles in Power BI Desktop, define DAX filters for each role, then manage security in Power BI Service.</li>
+                <li>RELATED is used to retrieve a value from a related table in a many-to-one relationship.</li>
+                <li>Create a new table using DAX, typically with the CALENDAR or CALENDARAUTO function, then add calculated columns for date attributes.</li>
+                <li>Filter context refers to the set of filters applied to a calculation, which can be modified by DAX functions like CALCULATE.</li>
+                <li>Create a parameter using "New Parameter" in Power Query, then use it in your queries or measures to create dynamic reports.</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

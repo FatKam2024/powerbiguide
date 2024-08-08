@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Optimization in Power BI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Performance Optimization in Power BI</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Introduction</h2>
+            <p>This tutorial covers techniques for optimizing the performance of your Power BI reports and dashboards.</p>
+        </section>
+        
+        <section>
+            <h2>Data Model Optimization</h2>
+            <p>Improve your data model for better performance:</p>
+            <ul>
+                <li>Remove unnecessary columns and tables</li>
+                <li>Use integer columns for relationships when possible</li>
+                <li>Avoid bi-directional relationships unless necessary</li>
+                <li>Implement star schema design principles</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>DAX Query Optimization</h2>
+            <p>Write efficient DAX queries:</p>
+            <ul>
+                <li>Use variables to store and reuse complex calculations</li>
+                <li>Avoid unnecessary CALCULATE functions</li>
+                <li>Use SUMMARIZECOLUMNS instead of SUMMARIZE when possible</li>
+                <li>Minimize the use of iterators (SUMX, FILTER) for large tables</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Report Design for Performance</h2>
+            <p>Design reports with performance in mind:</p>
+            <ul>
+                <li>Limit the number of visuals per page</li>
+                <li>Use bookmarks and buttons for drill-through instead of multiple visuals</li>
+                <li>Implement incremental refresh for large datasets</li>
+                <li>Use Performance Analyzer to identify slow-loading visuals</li>
+            </ul>
+            <img src="images/performance_analyzer.png" alt="Performance Analyzer" style="width:100%;">
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: Implementing Row-Level Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 7: Implementing Row-Level Security</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Objective</h2>
+            <p>In this lab, you will learn how to implement Row-Level Security (RLS) in Power BI to restrict data access based on user roles.</p>
+        </section>
+        
+        <section>
+            <h2>Steps</h2>
+            <ol>
+                <li>Open your Power BI Desktop file from previous labs.</li>
+                <li>Go to the Modeling tab and click on "Manage Roles".</li>
+                <li>Create a new role called "SalesManager".</li>
+                <li>In the Table filter DAX expression, enter: <code>[Region] = "North"</code></li>
+                <li>Create another role called "HR" with the filter: <code>[Department] = "Human Resources"</code></li>
+                <li>Click "Save" to create the roles.</li>
+                <li>Test the roles in Power BI Desktop using "View As Roles".</li>
+                <li>Publish the report to Power BI Service.</li>
+                <li>In Power BI Service, go to Security for the dataset.</li>
+                <li>Assign users or groups to the roles you created.</li>
+            </ol>
+
+            <img src="images/row_level_security.png" alt="Row-Level Security" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Exercise</h2>
+            <ol>
+                <li>Implement the "SalesManager" and "HR" roles as described in the steps.</li>
+                <li>Create a new role called "Executive" that has access to all data.</li>
+                <li>Test all roles in Power BI Desktop to ensure they're working correctly.</li>
+                <li>Publish your report and set up the security roles in Power BI Service.</li>
+                <li>Create a matrix visualization that demonstrates how data changes for different roles.</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: Creating Measures with DAX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 5: Creating Measures with DAX</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Steps (Continued)</h2>
+            <ol start="7">
+                <li>Use your measures in visualizations:
+                    <ul>
+                        <li>Create a matrix with Year and Month on rows, and your new measures on columns.</li>
+                        <li>Create a line chart showing Total Sales and Total Sales LY over time.</li>
+                        <li>Create a card visual displaying the YoY Growth %.</li>
+                    </ul>
+                </li>
+                <li>Format your measures:
+                    <ul>
+                        <li>Select each measure in the Fields pane.</li>
+                        <li>Use the Modeling tab to set appropriate formatting (e.g., currency for sales, percentage for growth).</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <img src="images/creating_measures.png" alt="Creating Measures" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Exercise</h2>
+            <ol>
+                <li>Create the four measures described in the steps above (Total Sales, Total Sales LY, YoY Growth %, Running Total Sales).</li>
+                <li>Create an additional measure called "Average Order Value" that calculates the average sales amount per order.</li>
+                <li>Create a measure that calculates the "Top 5 Products Sales" using the TOPN function.</li>
+                <li>Use your measures to create the following visualizations:
+                    <ul>
+                        <li>A matrix showing Total Sales, Total Sales LY, and YoY Growth % by Year and Month.</li>
+                        <li>A line chart comparing Total Sales and Running Total Sales over time.</li>
+                        <li>A card visual showing the overall YoY Growth %.</li>
+                        <li>A bar chart showing the Top 5 Products by sales.</li>
+                    </ul>
+                </li>
+                <li>Format all your measures appropriately (currency, percentage, etc.).</li>
+                <li>Add tooltips to your visualizations that display relevant measures.</li>
+                <li>Create a new report page showcasing your DAX measures and explain what each measure calculates.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Additional Challenge</h2>
+            <p>For those who finish early or want an extra challenge:</p>
+            <ul>
+                <li>Create a "Moving Average" measure that calculates the 3-month moving average of Total Sales.</li>
+                <li>Implement a "Year to Date" toggle using a what-if parameter and DAX measures.</li>
+                <li>Create a measure that calculates the "Pareto" (80/20 rule) of your products, identifying which products contribute to 80% of your sales.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

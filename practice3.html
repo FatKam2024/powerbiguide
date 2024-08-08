@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Questions: Set 3 (DAX and Calculations)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Practice Questions: Set 3 (DAX and Calculations)</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>DAX and Calculations Questions</h2>
+            <p>Test your knowledge of DAX and calculations with these questions:</p>
+            <ol>
+                <li>What is the difference between the SUM and SUMX functions in DAX?</li>
+                <li>How do you create a calculated column in Power BI?</li>
+                <li>Explain how the FILTER function works in DAX.</li>
+                <li>What is the purpose of using variables in DAX?</li>
+                <li>How do you use the DATEADD function in DAX for time intelligence?</li>
+                <li>What is the difference between COUNTROWS and DISTINCTCOUNT in DAX?</li>
+                <li>How do you create a running total using DAX?</li>
+                <li>Explain the concept of context transition in DAX.</li>
+                <li>How do you use the ALL function in DAX?</li>
+                <li>What is the purpose of the RANKX function in DAX?</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Answers</h2>
+            <ol>
+                <li>SUM adds all the numbers in a column, while SUMX evaluates an expression for each row in a table and then sums the results.</li>
+                <li>Go to the Data view, select the table, click "New Column" in the Modeling tab, and enter the DAX formula for the column.</li>
+                <li>The FILTER function returns a table that has been filtered based on the specified criteria, allowing for complex filtering in calculations.</li>
+                <li>Variables in DAX simplify complex calculations, improve performance by storing intermediate results, and make formulas more readable.</li>
+                <li>Use DATEADD to shift dates by a specified number of intervals, e.g., DATEADD('Date'[Date], -1, YEAR) for the previous year.</li>
+                <li>COUNTROWS counts the total number of rows in a table, while DISTINCTCOUNT counts the number of unique values in a column.</li>
+                <li>Use CALCULATE with FILTER and a cumulative condition, e.g., CALCULATE(SUM(Sales[Amount]), FILTER(ALL(Date), Date[Date] <= MAX(Date[Date]))).</li>
+                <li>Context transition occurs when a row context is transformed into a filter context, typically when using measures inside calculated columns.</li>
+                <li>ALL is used to remove filters from a table or column, often used inside CALCULATE to modify the filter context.</li>
+                <li>RANKX is used to rank items within a category based on a specified expression, useful for creating top N or bottom N reports.</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

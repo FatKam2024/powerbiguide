@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAX Basics in Power BI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DAX Basics in Power BI</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Introduction</h2>
+            <p>This tutorial covers the basics of DAX (Data Analysis Expressions) in Power BI, including creating calculated columns and measures.</p>
+        </section>
+        
+        <section>
+            <h2>Creating Calculated Columns</h2>
+            <p>Learn how to create calculated columns using DAX:</p>
+            <ol>
+                <li>Open your Power BI report and go to the Data view.</li>
+                <li>Click on "New Column" in the Modeling tab.</li>
+                <li>Enter the DAX formula for your calculated column.</li>
+                <li>Click "Enter" to create the column.</li>
+            </ol>
+            <img src="images/calculated_column.png" alt="Creating Calculated Columns" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Creating Measures</h2>
+            <p>Learn how to create measures using DAX:</p>
+            <ol>
+                <li>Go to the Report view.</li>
+                <li>Click on "New Measure" in the Modeling tab.</li>
+                <li>Enter the DAX formula for your measure.</li>
+                <li>Click "Enter" to create the measure.</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Common DAX Functions</h2>
+            <p>Explore some common DAX functions:</p>
+            <ul>
+                <li><code>SUM</code>: Adds all the numbers in a column.</li>
+                <li><code>AVERAGE</code>: Calculates the average of a column.</li>
+                <li><code>COUNT</code>: Counts the number of rows in a table or column.</li>
+                <li><code>DISTINCTCOUNT</code>: Counts the number of distinct values in a column.</li>
+                <li><code>IF</code>: Performs conditional logic.</li>
+                <li><code>RELATED</code>: Retrieves a value from a related table.</li>
+                <li><code>CALCULATE</code>: Modifies the filter context of a calculation.</li>
+                <li><code>FILTER</code>: Returns a table filtered down to specific rows.</li>
+                <li><code>ALL</code>: Returns all rows in a table, ignoring any filters.</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>Total Sales = SUM(Sales[Amount])
+Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)</code></pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

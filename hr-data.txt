@@ -1,0 +1,11 @@
+Employee ID,Name,Department,Age,Gender,Years of Experience,Salary,Performance Score,Satisfaction Score
+E001,John Doe,Sales,35,Male,8,75000,4.2,3.8
+E002,Jane Smith,Marketing,28,Female,4,65000,3.9,4.1
+E003,Mike Johnson,IT,42,Male,15,95000,4.5,3.9
+E004,Sarah Brown,HR,31,Female,6,70000,4.0,4.2
+E005,David Lee,Finance,39,Male,12,88000,4.3,3.7
+E006,Emily Clark,Sales,26,Female,3,62000,3.8,4.0
+E007,Chris Wilson,IT,33,Male,7,80000,4.1,3.8
+E008,Lisa Anderson,Marketing,29,Female,5,68000,3.9,4.3
+E009,Tom Taylor,Finance,45,Male,18,105000,4.6,3.6
+E010,Amy White,HR,37,Female,10,78000,4.2,4.1

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Modeling Best Practices in Power BI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Data Modeling Best Practices in Power BI</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Introduction</h2>
+            <p>This tutorial covers best practices for creating efficient and scalable data models in Power BI.</p>
+        </section>
+        
+        <section>
+            <h2>Star Schema Design</h2>
+            <p>Implement a star schema for optimal performance:</p>
+            <ul>
+                <li>Create separate dimension and fact tables</li>
+                <li>Denormalize dimension tables when possible</li>
+                <li>Use surrogate keys for dimension tables</li>
+                <li>Minimize the number of tables in your model</li>
+            </ul>
+            <img src="images/star_schema.png" alt="Star Schema Example" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Optimizing Relationships</h2>
+            <p>Best practices for table relationships:</p>
+            <ul>
+                <li>Use single-direction relationships when possible</li>
+                <li>Avoid circular dependencies</li>
+                <li>Use integer columns for relationship keys</li>
+                <li>Implement role-playing dimensions correctly</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Data Types and Formatting</h2>
+            <p>Optimize your model with proper data types and formatting:</p>
+            <ul>
+                <li>Use the correct data type for each column</li>
+                <li>Set appropriate formatting for date, currency, and numeric fields</li>
+                <li>Create a date dimension table for advanced time intelligence</li>
+                <li>Use calculated columns sparingly, prefer measures for calculations</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>

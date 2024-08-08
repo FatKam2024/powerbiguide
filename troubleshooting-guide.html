@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Troubleshooting Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h1, h2 { color: #0066cc; }
+        .issue { margin-bottom: 20px; }
+        .solution { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Power BI Troubleshooting Guide</h1>
+    
+    <h2>Common Issues and Solutions</h2>
+    
+    <div class="issue">
+        <h3>1. Data Refresh Failures</h3>
+        <div class="solution">
+            <p><strong>Solution:</strong></p>
+            <ul>
+                <li>Check data source connectivity</li>
+                <li>Verify credentials</li>
+                <li>Review gateway configuration (for on-premises data sources)</li>
+                <li>Check for timeout issues on large datasets</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="issue">
+        <h3>2. Performance Issues</h3>
+        <div class="solution">
+            <p><strong>Solution:</strong></p>
+            <ul>
+                <li>Optimize data model (remove unnecessary columns, create appropriate relationships)</li>
+                <li>Use measures instead of calculated columns where possible</li>
+                <li>Implement query folding in Power Query</li>
+                <li>Use incremental refresh for large datasets</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="issue">
+        <h3>3. Visualization Errors</h3>
+        <div class="solution">
+            <p><strong>Solution:</strong></p>
+            <ul>
+                <li>Check data types of columns used in visualizations</li>
+                <li>Verify that measures are correctly defined</li>
+                <li>Ensure relationships between tables are properly set up</li>
+                <li>Clear cache and refresh the report</li>
+            </ul>
+        </div>
+    </div>
+    
+    <h2>Additional Resources</h2>
+    <ul>
+        <li><a href="https://docs.microsoft.com/en-us/power-bi/troubleshoot/known-issues/power-bi-known-issues">Official Power BI Known Issues</a></li>
+        <li><a href="https://community.powerbi.com/">Power BI Community Forums</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/power-bi/guidance/power-bi-optimization">Performance Optimization Guide</a></li>
+    </ul>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training. For more information, visit our <a href="index.html">main training page</a>.</p>
+    </footer>
+</body>
+</html>

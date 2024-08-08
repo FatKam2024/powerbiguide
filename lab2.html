@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Data Modeling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 2: Data Modeling</h1>
+    </header>
+    
+    <main role="main">
+        <section>
+            <h2>Objective</h2>
+            <p>In this lab, you will learn how to create relationships between tables and build a data model in Power BI, implementing a star schema design.</p>
+        </section>
+        
+        <section>
+            <h2>Steps</h2>
+            <ol>
+                <li>Open Power BI Desktop and load the data from Lab 1 (Sales, Products, and Customers).</li>
+                <li>Go to the Model view by clicking on the Model icon in the left sidebar.</li>
+                <li>Create relationships:
+                    <ul>
+                        <li>Drag the "ProductID" field from the Sales table to the "ProductID" field in the Products table.</li>
+                        <li>Drag the "CustomerID" field from the Sales table to the "CustomerID" field in the Customers table.</li>
+                    </ul>
+                </li>
+                <li>Configure relationship properties:
+                    <ul>
+                        <li>Double-click on each relationship line.</li>
+                        <li>Ensure the cardinality is set to "Many to One" (*:1).</li>
+                        <li>Set the Cross filter direction to "Single".</li>
+                    </ul>
+                </li>
+                <li>Create a Date table:
+                    <ul>
+                        <li>Go to the "Modeling" tab and click "New Table".</li>
+                        <li>Enter the DAX formula: <code>Date = CALENDAR(DATE(2020,1,1), DATE(2023,12,31))</code></li>
+                    </ul>
+                </li>
+                <li>Create a relationship between the Sales table and the new Date table.</li>
+            </ol>
+
+            <img src="images/data_modeling.png" alt="Data Modeling" style="width:100%;">
+        </section>
+        
+        <section>
+            <h2>Exercise</h2>
+            <ol>
+                <li>Build the data model as described in the steps above.</li>
+                <li>Create two calculated columns:
+                    <ul>
+                        <li>In the Products table, create a "Profit" column (Sell Price - Cost Price).</li>
+                        <li>In the Date table, create a "Month Name" column using the FORMAT function.</li>
+                    </ul>
+                </li>
+                <li>Verify all relationships are correctly set up in the model view.</li>
+                <li>Hide unnecessary columns from report view (e.g., IDs used for relationships).</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 CK Power BI Training</p>
+    </footer>
+</body>
+</html>
